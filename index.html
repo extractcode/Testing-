@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Web Practice Project</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <section class="responsive-box">
+      <h2>Responsive Design Block</h2>
+      <p>This block adapts to screen size using media queries.</p>
+    </section>
+
+    <section class="quiz-section">
+      <h2>Quiz</h2>
+      <div id="quiz-container"></div>
+      <button onclick="submitQuiz()">Submit Answers</button>
+      <p id="quiz-result"></p>
+    </section>
+
+    <section class="carousel-section">
+      <h2>Image Carousel</h2>
+      <img id="carousel" src="img1.jpg" alt="Carousel Image" width="300" />
+      <br />
+      <button onclick="nextImage()">Next</button>
+    </section>
+
+    <section class="api-section">
+      <h2>Weather Info</h2>
+      <button onclick="getWeather()">Get Weather</button>
+      <p id="weather-output">Click to load weather.</p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
